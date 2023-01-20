@@ -22,6 +22,20 @@ nav a {
   margin-right: 1em;
 }
 
+.logo {
+  display: flex;
+}
+
+.logo canvas {
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  max-height: 50px;
+}
+
+.logo h1 {
+  margin: 5px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,13 +72,15 @@ blockquote cite {
 
 section {
   padding: 1em;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 1em;
+  justify-content: center;
 }
 
 form label {
@@ -128,7 +144,7 @@ footer p {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #444444;
   padding: 2em;
   border-radius: 4px;
   max-width: 80%;
@@ -146,4 +162,26 @@ footer p {
 
 .modal-content button:hover {
   background-color: #0069d9;
+}
+
+@media (max-width: 900px) {
+  /* Change the font size for smaller screens */
+  body {
+    font-size: 14px;
+  }
+
+  /* Stack the grid items vertically */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Make the navigation links stack vertically */
+  nav {
+    flex-direction: column;
+  }
+
+  /* Center the modal content on smaller screens */
+  .modal-content {
+    max-width: 90%;
+  }
 }
