@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+  color: white;
+}
+
+header {
+  background-color: #444444;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 1em 0;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 10px solid #444444;
+  background-color: #333333;
+  color: #ccc;
+  margin: 1em;
+  padding: 0.5em;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+section {
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+
+form label {
+  margin-right: 1em;
+  flex-basis: 100%;
+}
+
+form input {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #444444;
+}
+
+form button[type='submit'] {
+  background-color: #444444;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  margin-left: 1em;
+}
+
+form button[type='submit']:hover {
+  background-color: #0069d9;
+}
+
+footer {
+  background-color: #444444;
+  padding: 1em;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+footer p {
+  margin: 0;
+  color: #ccc;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2em;
+  border-radius: 4px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.modal-content button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+
+.modal-content button:hover {
+  background-color: #0069d9;
+}
